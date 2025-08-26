@@ -1,0 +1,16 @@
+{
+  "name": "COGs Report Pack",
+  "version": "0.1",
+  "prompts": [
+    {
+      "id": "cogs_core",
+      "title": "COGs + GCR Overview",
+      "description": "Summarize COGs, Revenue, Margin, and how GCR may be influencing COGs over the selected period.",
+      "system_prompt_file": "report_prompt.txt",
+      "user_template": "Report scope: date_range={date_start}..{date_end}, sites={sites}, customers={customers}. Question: {question}",
+      "defaults": {
+        "question": "How is GCR affecting COGs and margins over time, and where should I focus?"
+      }
+    }
+  ]
+}
